@@ -1,9 +1,15 @@
-module CowTemplate
+require 'ruby_cowsay/cow_shed'
 
-  def render_cow
-    _ = <<COW
+module RubyCowsay
+  class Cow
+    class MechAndCow
+      def render
+        _ = <<COW
 
 COW
+      end
+    end
   end
 
+  CowShed.register('mech-and-cow', RubyCowsay::Cow::MechAndCow)
 end

@@ -1,7 +1,10 @@
-module CowTemplate
+require 'ruby_cowsay/cow_shed'
 
-  def render_cow
-    _ = <<COW
+module RubyCowsay
+  class Cow
+    class ElephantInSnake
+      def render
+        _ = <<COW
    #{@thoughts}
     #{@thoughts}              ....       
            ........    .      
@@ -13,6 +16,9 @@ module CowTemplate
 Elephant inside ASCII snake
 
 COW
+      end
+    end
   end
 
+  CowShed.register('elephant-in-snake', RubyCowsay::Cow::ElephantInSnake)
 end

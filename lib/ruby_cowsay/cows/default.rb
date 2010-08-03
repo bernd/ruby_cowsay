@@ -1,13 +1,19 @@
-module CowTemplate
-  
-  def render_cow
-    _ = <<COW
+require 'ruby_cowsay/cow_shed'
+
+module RubyCowsay
+  class Cow
+    class Default
+      def render
+        _ = <<COW
       #{@thoughts}   ^__^
        #{@thoughts}  (#{@eyes})\\_______
           (__)\\       )\\/\\
            #{@tongue} ||----w |
               ||     ||
 COW
+      end
+    end
   end
-  
+
+  CowShed.register('default', RubyCowsay::Cow::Default)
 end

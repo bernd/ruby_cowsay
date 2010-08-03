@@ -1,7 +1,10 @@
-module CowTemplate
+require 'ruby_cowsay/cow_shed'
 
-  def render_cow
-    _ = <<COW
+module RubyCowsay
+  class Cow
+    class BeavisZen
+      def render
+        _ = <<COW
    #{@thoughts}         __------~~-,
     #{@thoughts}      ,'            ,
           /               \\
@@ -22,6 +25,9 @@ module CowTemplate
              /            _ \\
 
 COW
+      end
+    end
   end
 
+  CowShed.register('beavis.zen', RubyCowsay::Cow::BeavisZen)
 end

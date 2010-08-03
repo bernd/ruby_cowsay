@@ -1,7 +1,10 @@
-module CowTemplate
+require 'ruby_cowsay/cow_shed'
 
-  def render_cow
-    _ = <<COW
+module RubyCowsay
+  class Cow
+    class Kitty
+      def render
+        _ = <<COW
      #{@thoughts}
       #{@thoughts}
        ("`-'  '-/") .___..--' ' "`-._
@@ -11,6 +14,9 @@ module CowTemplate
    ( i l ),-''  ( l i),'  ( ( ! .-'    
 
 COW
+      end
+    end
   end
 
+  CowShed.register('kitty', RubyCowsay::Cow::Kitty)
 end
