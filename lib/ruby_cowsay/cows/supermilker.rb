@@ -3,12 +3,12 @@ require 'ruby_cowsay/cow_shed'
 module RubyCowsay
   class Cow
     class Supermilker
-      def render
+      def render(thoughts, eyes, tongue)
         _ = <<COW
-  #{@thoughts}   ^__^
-   #{@thoughts}  (#{@eyes})\\_______        ________
+  #{thoughts}   ^__^
+   #{thoughts}  (#{eyes})\\_______        ________
       (__)\\       )\\/\\    |Super |
-       #{@tongue} ||----W |       |Milker|
+       #{tongue} ||----W |       |Milker|
           ||    UDDDDDDDDD|______|
 
 COW

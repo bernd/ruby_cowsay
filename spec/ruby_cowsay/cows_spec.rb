@@ -21,8 +21,8 @@ describe "Cows: "do
 
       it "can render a cow" do
         shed = RubyCowsay::CowShed.new
-        puts shed.pick(cow).new.render
-        shed.pick(cow).new.render.should_not be_empty
+        puts shed.pick(cow).new.render('', '', '')
+        shed.pick(cow).new.render('', '', '').should_not be_empty
       end
     end
   end

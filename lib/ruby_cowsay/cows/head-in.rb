@@ -3,14 +3,14 @@ require 'ruby_cowsay/cow_shed'
 module RubyCowsay
   class Cow
     class HeadIn
-      def render
+      def render(thoughts, eyes, tongue)
         _ = <<COW
-    #{@thoughts}
-     #{@thoughts}
+    #{thoughts}
+     #{thoughts}
     ^__^         /
-    (#{@eyes})\\_______/  _________
+    (#{eyes})\\_______/  _________
     (__)\\       )=(  ____|_ \\_____
-   #{@tongue}   ||----w |  \\ \\     \\_____ |
+   #{tongue}   ||----w |  \\ \\     \\_____ |
         ||     ||   ||           ||
 
 COW

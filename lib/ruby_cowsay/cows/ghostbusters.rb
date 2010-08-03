@@ -3,11 +3,11 @@ require 'ruby_cowsay/cow_shed'
 module RubyCowsay
   class Cow
     class Ghostbusters
-      def render
+      def render(thoughts, eyes, tongue)
         _ = <<COW
-          #{@thoughts}
-           #{@thoughts}
-            #{@thoughts}          __---__
+          #{thoughts}
+           #{thoughts}
+            #{thoughts}          __---__
                     _-       /--______
                __--( /     \\ )XXXXXXXXXXX\\v.
              .-XXX(   O   O  )XXXXXXXXXXXXXXX-

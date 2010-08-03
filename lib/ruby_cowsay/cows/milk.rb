@@ -3,10 +3,10 @@ require 'ruby_cowsay/cow_shed'
 module RubyCowsay
   class Cow
     class Milk
-      def render
+      def render(thoughts, eyes, tongue)
         _ = <<COW
- #{@thoughts}     ____________ 
-  #{@thoughts}    |__________|
+ #{thoughts}     ____________ 
+  #{thoughts}    |__________|
       /           /\\
      /           /  \\
     /___________/___/|

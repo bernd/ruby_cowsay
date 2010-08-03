@@ -3,7 +3,7 @@ require 'ruby_cowsay/cow_shed'
 module RubyCowsay
   class Cow
     class MechAndCow
-      def render
+      def render(thoughts, eyes, tongue)
         _ = <<COW
 
 COW

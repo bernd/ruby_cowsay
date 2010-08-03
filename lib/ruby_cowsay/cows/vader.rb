@@ -3,11 +3,11 @@ require 'ruby_cowsay/cow_shed'
 module RubyCowsay
   class Cow
     class Vader
-      def render
+      def render(thoughts, eyes, tongue)
         _ = <<COW
-        #{@thoughts}    ,-^-.
-         #{@thoughts}   !oYo!
-          #{@thoughts} /./=\\.\\______
+        #{thoughts}    ,-^-.
+         #{thoughts}   !oYo!
+          #{thoughts} /./=\\.\\______
                ##        )\\/\\
                 ||-----w||
                 ||      ||

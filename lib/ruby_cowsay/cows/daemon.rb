@@ -3,11 +3,11 @@ require 'ruby_cowsay/cow_shed'
 module RubyCowsay
   class Cow
     class Daemon
-      def render
+      def render(thoughts, eyes, tongue)
         _ = <<COW
-   #{@thoughts}         ,        ,
-    #{@thoughts}       /(        )`
-     #{@thoughts}      \\ \\___   / |
+   #{thoughts}         ,        ,
+    #{thoughts}       /(        )`
+     #{thoughts}      \\ \\___   / |
             /- _  `-/  '
            (/\\/ \\ \\   /\\
            / /   | `    \\

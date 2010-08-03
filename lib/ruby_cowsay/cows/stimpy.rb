@@ -3,10 +3,10 @@ require 'ruby_cowsay/cow_shed'
 module RubyCowsay
   class Cow
     class Stimpy
-      def render
+      def render(thoughts, eyes, tongue)
         _ = <<COW
-  #{@thoughts}     .    _  .    
-   #{@thoughts}    |\\_|/__/|    
+  #{thoughts}     .    _  .    
+   #{thoughts}    |\\_|/__/|    
        / / \\/ \\  \\  
       /__|O||O|__ \\ 
      |/_ \\_/\\_/ _\\ |  

@@ -3,14 +3,14 @@ require 'ruby_cowsay/cow_shed'
 module RubyCowsay
   class Cow
     class Sodomized
-      def render
+      def render(thoughts, eyes, tongue)
         _ = <<COW
-      #{@thoughts}                _
-       #{@thoughts}              (_)
-        #{@thoughts}   ^__^       / \\
-         #{@thoughts}  (#{@eyes})\\_____/_\\ \\
+      #{thoughts}                _
+       #{thoughts}              (_)
+        #{thoughts}   ^__^       / \\
+         #{thoughts}  (#{eyes})\\_____/_\\ \\
             (__)\\       ) /
-             #{@tongue} ||----w ((
+             #{tongue} ||----w ((
                 ||     ||>> 
 
 COW

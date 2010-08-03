@@ -3,12 +3,12 @@ require 'ruby_cowsay/cow_shed'
 module RubyCowsay
   class Cow
     class Moofasa
-      def render
+      def render(thoughts, eyes, tongue)
         _ = <<COW
-       #{@thoughts}    ____
-        #{@thoughts}  /    \\
+       #{thoughts}    ____
+        #{thoughts}  /    \\
           | ^__^ |
-          | (#{@eyes}) |______
+          | (#{eyes}) |______
           | (__) |      )\\/\\
            \\____/|----w |
                 ||     ||

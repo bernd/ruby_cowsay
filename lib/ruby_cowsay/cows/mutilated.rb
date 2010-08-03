@@ -3,13 +3,13 @@ require 'ruby_cowsay/cow_shed'
 module RubyCowsay
   class Cow
     class Mutilated
-      def render
+      def render(thoughts, eyes, tongue)
         _ = <<COW
-       #{@thoughts}   \\_______
- v__v   #{@thoughts}  \\   O   )
- (#{@eyes})      ||----w |
+       #{thoughts}   \\_______
+ v__v   #{thoughts}  \\   O   )
+ (#{eyes})      ||----w |
  (__)      ||     ||  \\/\\
-  #{@tongue}
+  #{tongue}
 
 COW
       end

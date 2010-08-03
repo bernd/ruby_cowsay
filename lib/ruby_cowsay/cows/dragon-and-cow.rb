@@ -3,12 +3,12 @@ require 'ruby_cowsay/cow_shed'
 module RubyCowsay
   class Cow
     class DragonAndCow
-      def render
+      def render(thoughts, eyes, tongue)
         _ = <<COW
-                       #{@thoughts}                    ^    /^
-                        #{@thoughts}                  / \\  // \\
-                         #{@thoughts}   |\\___/|      /   \\//  .\\
-                          #{@thoughts}  /O  O  \\__  /    //  | \\ \\           *----*
+                       #{thoughts}                    ^    /^
+                        #{thoughts}                  / \\  // \\
+                         #{thoughts}   |\\___/|      /   \\//  .\\
+                          #{thoughts}  /O  O  \\__  /    //  | \\ \\           *----*
                             /     /  \\/_/    //   |  \\  \\          \\   |
                             \@___\@`    \\/_   //    |   \\   \\         \\/\\ \\
                            0/0/|       \\/_ //     |    \\    \\         \\  \\
@@ -17,7 +17,7 @@ module RubyCowsay
                  0/0/0/0/0/0/`/,_ _ _/  ) ; -.    |    _ _\\.-~       /   /
                              ,-}        _      *-.|.-~-.           .~    ~
             \\     \\__/        `/\\      /                 ~-. _ .-~      /
-             \\____(#{@eyes})           *.   }            {                   /
+             \\____(#{eyes})           *.   }            {                   /
              (    (--)          .----~-.\\        \\-`                 .~
              //__\\\\  \\__ Ack!   ///.----..<        \\             _ -~
             //    \\\\               ///-._ _ _ _ _ _ _{^ - - - - ~

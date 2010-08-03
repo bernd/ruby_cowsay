@@ -3,11 +3,11 @@ require 'ruby_cowsay/cow_shed'
 module RubyCowsay
   class Cow
     class Skeleton
-      def render
+      def render(thoughts, eyes, tongue)
         _ = <<COW
-          #{@thoughts}      (__)      
-           #{@thoughts}     /#{@eyes}|  
-            #{@thoughts}   (_"_)*+++++++++*
+          #{thoughts}      (__)      
+           #{thoughts}     /#{eyes}|  
+            #{thoughts}   (_"_)*+++++++++*
                    //I#\\\\\\\\\\\\\\\\I\\
                    I[I|I|||||I I `
                    I`I'///'' I I
